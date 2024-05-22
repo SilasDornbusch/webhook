@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="int" placeholder="Preis ( € )" id="preis">
+    <input type="int" placeholder="Anzahl ( KM )" id="km">
+
+    <button onclick="calculate()">Ausrechnen</button>
+
+</body>
+</html>
+
+<script>
+
+function calculate() {
+    let preis = document.getElementById("preis").value
+    let km = document.getElementById("km").value
+
+    let money = preis * km
+
+    alert("Du musst " + money + "€ bezahlen!")
+}
+
+</script>
